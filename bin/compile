@@ -18,7 +18,7 @@ if $BUILD_IT; then
   TMP_DIR="tmp"
   OPTIPNG_DOWNLOAD_URL="https://downloads.sourceforge.net/project/optipng/OptiPNG/optipng-${OPTIPNG_VER}/optipng-${OPTIPNG_VER}.tar.gz"
   #JPEGOPTIM_DOWNLOAD_URL="http://www.kokkonen.net/tjko/src/jpegoptim-${JPEGOPTIM_VER}.tar.gz"
-  JPEGOPTION_DOWNLOAD_URL="https://github.com/tjko/jpegoptim/archive/refs/tags/RELEASE.${JPEGOPTIM_VER}.tar.gz"
+  JPEGOPTIM_DOWNLOAD_URL="https://github.com/tjko/jpegoptim/archive/refs/tags/RELEASE.${JPEGOPTIM_VER}.tar.gz"
 
   cd $BUILD_DIR
 

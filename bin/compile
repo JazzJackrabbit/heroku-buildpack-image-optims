@@ -31,7 +31,7 @@ if $BUILD_IT; then
   wget --progress=bar:force $JPEGOPTIM_DOWNLOAD_URL
 
   tar zxf "optipng-${OPTIPNG_VER}.tar.gz"
-  tar zxf "jpegoptim-${JPEGOPTIM_VER}.tar.gz"
+  tar zxf "RELEASE.${JPEGOPTIM_VER}.tar.gz"
 
   echo "Make OPTIPNG"
   cd optipng-$OPTIPNG_VER
@@ -42,7 +42,7 @@ if $BUILD_IT; then
   cd ../
 
   echo "Make JPEGOPTIM"
-  cd jpegoptim-$JPEGOPTIM_VER
+  cd RELEASE.$JPEGOPTIM_VER
   ./configure
   make -s
 
@@ -51,7 +51,7 @@ if $BUILD_IT; then
   mkdir -p $VENDOR_DIR/optims/bin
 
   cp $TMP_DIR/optipng-$OPTIPNG_VER/src/optipng/optipng  $VENDOR_DIR/optims/bin/optipng
-  cp $TMP_DIR/jpegoptim-$JPEGOPTIM_VER/jpegoptim  $VENDOR_DIR/optims/bin/jpegoptim
+  cp $TMP_DIR/RELEASE.$JPEGOPTIM_VER/jpegoptim  $VENDOR_DIR/optims/bin/jpegoptim
 
   chmod +x $VENDOR_DIR/optims/bin/optipng
   chmod +x $VENDOR_DIR/optims/bin/jpegoptim
